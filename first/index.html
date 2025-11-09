@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        /* div {
+            border: 2px solid black;
+        } */
+
+        body {
+            display: flex;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(204, 204, 204);
+            height: 100vh;
+        }
+
+        .aside {
+            background-color: rgb(42, 42, 42);
+            display: flex;
+            flex-direction: column;
+            width: 180px;
+            flex: 1;
+        }
+
+        .aside a {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: 1px solid black;
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+        }
+
+        .aside img {
+            margin: 40px auto;
+            width: 100px;
+            height: auto;
+        }
+
+        .aside a:hover {
+            color: rgb(155, 186, 213)
+        }
+
+        .main {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 40px;
+            color: black;
+            flex: 4;
+        }
+
+        header {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: rgb(255, 255, 255);
+            flex: 1;
+            padding: 20px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+        }
+
+        .card img {
+            padding: 20px;
+            width: 300px;
+            height: auto;
+        }
+
+        .pos {
+            margin-top: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 4px;
+            padding: 20px;
+        }
+
+        .pos h4 {
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid gray;
+        }
+
+        th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aside">
+        <img src="logo.png" class="img">
+        <nav class="menu">
+            <a href="#">DASHBOARD</a>
+            <a href="#">USERS</a>
+            <a href="#">FILE MANGER</a>
+            <a href="#">POST</a>
+            <a href="#">EVENTS</a>
+        </nav>
+    </div>
+    <div class="main">
+        <header>Dashboard - May 25, 2019</header>
+        <div class="stats">
+            <div class="card">
+                <h4>TRAFFIC</h4>
+                <img src="chart1.png">
+            </div>
+            <div class="card">
+                <h4>LOADS</h4>
+                <img src="chart2.png">
+            </div>
+        </div>
+        <div class="pos">
+            <h4>RECENT ACTIVITY</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Etiam eu erat sit amet nisi eleifend aliquam</td>
+                        <td>Phoebe Britton</td>
+                        <td>25/05/19</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ut maximus lacus ut ante tristique, et rutrum leo eleifend</td>
+                        <td>Rosina Clay</td>
+                        <td>25/05/19</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Donec eget ligula sed diam pharetra sodales eget a metus</td>
+                        <td>Ayush Horn</td>
+                        <td>24/05/19</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Curabitur bibendum odio in velit pretium luctus</td>
+                        <td>Jillian Carver</td>
+                        <td>23/05/19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
